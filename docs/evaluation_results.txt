@@ -1,0 +1,10 @@
+6041 forecast origins, 71s
+     RMSE persist  RMSE twin_nomeal  RMSE twin_meals_known
+h                                                         
+30           16.1              14.0                   12.4
+60           26.6              24.0                   16.6
+120          39.1              35.3                   19.3
+
+sensitivity recovery (higher true insulin resistance -> lower sensitivity; want NEGATIVE corr):
+  corr(prior s0, true IR)     = -0.78
+  corr(filtered s, true IR)   = -0.76
