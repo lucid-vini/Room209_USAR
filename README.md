@@ -12,7 +12,7 @@ Submission for the Happiest Health **Digital Twin in Healthcare** challenge.
 
 ## Links
 
-- Video demo (20+ min): [VIDEO LINK]
+- Video demo (20+ min): https://youtu.be/RGiZ07iec2o
 - Presentation: [docs/presentation.pdf](docs/presentation.pdf)
 - Architecture diagram: [docs/architecture.pdf](docs/architecture.pdf)
 - License: MIT (see [LICENSE](LICENSE))
