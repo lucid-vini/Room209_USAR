@@ -1,0 +1,7 @@
+horizon_min,model,rmse,clarke_A_pct,clarke_AB_pct,n
+30,Persistence (glucose stays the same),17.0,93.2,99.7,5557
+30,Twin forecast (no future meals assumed),14.6,94.7,99.7,5557
+60,Persistence (glucose stays the same),28.1,78.8,98.8,5557
+60,Twin forecast (no future meals assumed),24.9,86.2,98.7,5557
+120,Persistence (glucose stays the same),41.3,52.3,97.3,5557
+120,Twin forecast (no future meals assumed),37.1,71.6,96.9,5557

@@ -1,0 +1,35 @@
+friendly,mean_abs_shap
+time of day,1.5405
+steps in last hour,0.3935
+HbA1c (long-term control),0.3023
+steps in last 3 hours,0.2719
+"lowest glucose, last 3 hours",0.2322
+twin's forecast peak (next 2 h),0.2127
+time since last logged meal,0.2086
+estimated insulin sensitivity,0.163
+estimated insulin action,0.1421
+current glucose,0.0935
+carbs eaten in last 3 hours,0.0867
+"glucose variability, last 3 hours",0.0816
+BMI,0.0774
+sleep in last 24 hours,0.0731
+blood pressure,0.0694
+twin's forecast at +120 min,0.0674
+sensor vs twin mismatch,0.0537
+"average glucose, last hour",0.0472
+"highest glucose, last 3 hours",0.0459
+carbs still being absorbed (twin),0.0432
+"average glucose, last 3 hours",0.0424
+twin's forecast at +30 min,0.0415
+twin's filtered glucose,0.0341
+twin's forecast at +60 min,0.0206
+"heart rate, last hour",0.0202
+years with diabetes,0.0172
+rapid rise/fall in last 30 min,0.0163
+estimated insulin level,0.0159
+age,0.0127
+"glucose variability, last hour",0.0078
+metformin use,0.0036
+family history,0.0029
+time to twin's forecast peak,0.0011
+sex,0.0006

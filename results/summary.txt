@@ -1,0 +1,33 @@
+               target                                     model  auroc  ci_lo  ci_hi  sensitivity  precision  specificity  n_test  n_pos_test  n_pos_patients_test  threshold                                       caution
+high >180 in next 2 h                Rule: linear extrapolation  0.626  0.580  0.657        0.688      0.206        0.458    4707         800                    9        NaN                                              
+high >180 in next 2 h         Twin physics only (forecast peak)  0.679  0.595  0.739        0.665      0.242        0.573    4707         800                    9        NaN                                              
+high >180 in next 2 h                     LightGBM: sensor only  0.911  0.888  0.931        0.641      0.636        0.925    4707         800                    9      0.679                                              
+high >180 in next 2 h          LightGBM: sensor + health record  0.916  0.886  0.939        0.686      0.627        0.916    4707         800                    9      0.645                                              
+high >180 in next 2 h LightGBM: sensor + record + twin (hybrid)  0.925  0.899  0.946        0.691      0.655        0.926    4707         800                    9      0.669                                              
+high >180 in next 2 h       SANITY: hybrid with SHUFFLED labels  0.562    NaN    NaN          NaN        NaN          NaN    4707         800                    9        NaN                                              
+  low <70 in next 2 h                Rule: linear extrapolation  0.844  0.692  0.880        0.742      0.083        0.747    5464         163                    4        NaN EXPLORATORY: lows come from very few patients
+  low <70 in next 2 h   Twin physics only (forecast at +60 min)  0.967  0.880  0.987        0.933      0.183        0.872    5464         163                    4        NaN EXPLORATORY: lows come from very few patients
+  low <70 in next 2 h                     LightGBM: sensor only  0.935  0.738  0.978        0.865      0.249        0.920    5464         163                    4      0.258 EXPLORATORY: lows come from very few patients
+  low <70 in next 2 h          LightGBM: sensor + health record  0.905  0.740  0.982        0.890      0.121        0.802    5464         163                    4      0.346 EXPLORATORY: lows come from very few patients
+  low <70 in next 2 h LightGBM: sensor + record + twin (hybrid)  0.916  0.891  0.991        0.902      0.234        0.909    5464         163                    4      0.184 EXPLORATORY: lows come from very few patients
+  low <70 in next 2 h       SANITY: hybrid with SHUFFLED labels  0.610    NaN    NaN          NaN        NaN          NaN    5464         163                    4        NaN EXPLORATORY: lows come from very few patients
+
+ horizon_min                                   model  rmse  clarke_A_pct  clarke_AB_pct    n
+          30    Persistence (glucose stays the same)  17.0          93.2           99.7 5557
+          30 Twin forecast (no future meals assumed)  14.6          94.7           99.7 5557
+          60    Persistence (glucose stays the same)  28.1          78.8           98.8 5557
+          60 Twin forecast (no future meals assumed)  24.9          86.2           98.7 5557
+         120    Persistence (glucose stays the same)  41.3          52.3           97.3 5557
+         120 Twin forecast (no future meals assumed)  37.1          71.6           96.9 5557
+
+                       friendly  mean_abs_shap
+                    time of day          1.541
+             steps in last hour          0.394
+      HbA1c (long-term control)          0.302
+          steps in last 3 hours          0.272
+   lowest glucose, last 3 hours          0.232
+twin's forecast peak (next 2 h)          0.213
+    time since last logged meal          0.209
+  estimated insulin sensitivity          0.163
+       estimated insulin action          0.142
+                current glucose          0.093

@@ -1,0 +1,13 @@
+target,model,auroc,ci_lo,ci_hi,sensitivity,precision,specificity,n_test,n_pos_test,n_pos_patients_test,threshold,caution
+high >180 in next 2 h,Rule: linear extrapolation,0.626,0.58,0.657,0.688,0.206,0.458,4707,800,9,,
+high >180 in next 2 h,Twin physics only (forecast peak),0.679,0.595,0.739,0.665,0.242,0.573,4707,800,9,,
+high >180 in next 2 h,LightGBM: sensor only,0.911,0.888,0.931,0.641,0.636,0.925,4707,800,9,0.679,
+high >180 in next 2 h,LightGBM: sensor + health record,0.916,0.886,0.939,0.686,0.627,0.916,4707,800,9,0.645,
+high >180 in next 2 h,LightGBM: sensor + record + twin (hybrid),0.925,0.899,0.946,0.691,0.655,0.926,4707,800,9,0.669,
+high >180 in next 2 h,SANITY: hybrid with SHUFFLED labels,0.562,,,,,,4707,800,9,,
+low <70 in next 2 h,Rule: linear extrapolation,0.844,0.692,0.88,0.742,0.083,0.747,5464,163,4,,EXPLORATORY: lows come from very few patients
+low <70 in next 2 h,Twin physics only (forecast at +60 min),0.967,0.88,0.987,0.933,0.183,0.872,5464,163,4,,EXPLORATORY: lows come from very few patients
+low <70 in next 2 h,LightGBM: sensor only,0.935,0.738,0.978,0.865,0.249,0.92,5464,163,4,0.258,EXPLORATORY: lows come from very few patients
+low <70 in next 2 h,LightGBM: sensor + health record,0.905,0.74,0.982,0.89,0.121,0.802,5464,163,4,0.346,EXPLORATORY: lows come from very few patients
+low <70 in next 2 h,LightGBM: sensor + record + twin (hybrid),0.916,0.891,0.991,0.902,0.234,0.909,5464,163,4,0.184,EXPLORATORY: lows come from very few patients
+low <70 in next 2 h,SANITY: hybrid with SHUFFLED labels,0.61,,,,,,5464,163,4,,EXPLORATORY: lows come from very few patients
